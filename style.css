@@ -1,0 +1,38 @@
+body {
+  font-family: "Playfair Display", serif;
+}
+
+.container {
+  border: 2px solid;
+  margin: 20px;
+  border-radius: 10px;
+}
+.city {
+  font-weight: bold;
+  font-size: 40px;
+  padding: 20px;
+}
+h3 {
+  font-weight: bold;
+  font-size: 25px;
+}
+.emoji {
+  position: relative;
+  left: 50px;
+  font-size: 80px;
+}
+.tempNow {
+  text-align: center;
+}
+.searchbar {
+  text-align: center;
+  padding: 40px;
+}
+
+.card-header,
+.card-text {
+  text-align: center;
+}
+.emo {
+  font-size: 100px;
+}
