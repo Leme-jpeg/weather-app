@@ -37,5 +37,6 @@ h3 {
   font-size: 100px;
 }
 .link {
+  display: block;
   text-align: center;
 }
