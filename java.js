@@ -47,10 +47,10 @@ form.addEventListener("submit", search);
 //geolocalisation
 
 function showTemp(response) {
-  let temp = Math.round(response.data.main.temp);
-  let temperature = document.querySelector("#temperature");
+  celsiusTemperature = Math.round(response.data.main.temp);
+  let temperatureElement = document.querySelector("#temperature");
 
-  temperature.innerHTML = `${temp}`;
+  temperatureElement.innerHTML = `${celsiusTemperature}`;
   document.querySelector("#city").innerHTML = response.data.name;
 
   //icon for temp
@@ -76,24 +76,17 @@ function coordinate(position) {
 }
 navigator.geolocation.getCurrentPosition(coordinate);
 
-/*conversion C to F
-celsiusTemperature = response.data.main.temp;
-temperatureElement.innerHTML = Math.round(celsiusTemperature);
+//conversion C to F
 
 function displayFahrenheitTemperature(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
-
-  celsiusLink.classList.remove("active");
-  fahrenheitLink.classList.add("active");
   let fahrenheiTemperature = (celsiusTemperature * 9) / 5 + 32;
   temperatureElement.innerHTML = Math.round(fahrenheiTemperature);
 }
 
 function displayCelsiusTemperature(event) {
   event.preventDefault();
-  celsiusLink.classList.add("active");
-  fahrenheitLink.classList.remove("active");
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
@@ -104,4 +97,3 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
-*/
