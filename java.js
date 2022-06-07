@@ -49,10 +49,13 @@ form.addEventListener("submit", search);
 function showTemp(response) {
   celsiusTemperature = Math.round(response.data.main.temp);
   let temperatureElement = document.querySelector("#temperature");
-
   temperatureElement.innerHTML = `${celsiusTemperature}`;
   document.querySelector("#city").innerHTML = response.data.name;
 
+  let windElement = document.querySelector("#wind");
+  windElement.innerHTML = Math.round(response.data.wind.speed);
+  let descriptionElement = document.querySelector("#description");
+  descriptionElement.innerHTML = response.data.weather[0].description;
   //icon for temp
   let iconElement = document.querySelector("#icon");
   iconElement.setAttribute(

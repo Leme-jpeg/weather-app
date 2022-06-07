@@ -11,23 +11,40 @@ body {
 .city {
   font-weight: bold;
   font-size: 40px;
-  padding: 20px;
+  padding: 20 0 0 0px;
 }
 h3 {
   font-weight: bold;
   font-size: 25px;
+  left: 16px;
+  padding: 0 0 0 10px;
 }
-.emoji {
+#icon {
   position: relative;
-  left: 50px;
+  left: 30px;
   font-size: 80px;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+}
+li {
+  list-style: none;
+  font-weight: bold;
 }
 .tempNow {
   text-align: center;
 }
+.currently {
+  font-size: 35px;
+}
+
+#units {
+  vertical-align: top;
+  font-weight: bold;
+  font: size 10px;
+}
 .searchbar {
   text-align: center;
-  padding: 40px;
+  padding: 10px 0 40px 0;
 }
 
 .card-header,
