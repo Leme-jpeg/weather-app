@@ -17,14 +17,17 @@
 	<div class="container">
       
 		<div class="row">
-			<div class="col">
-				<h1 class="city" id="city" >Montreal <br /></h1>
+			<div class="col">	
 			<h3 id="date"></h3>
 				<img src="" alt="Clear" id="icon"  />
 				 <ul>
                <li id="description"></li>
                 <li>Wind: <span id="wind"></span> km/h</li>
-              </ul>
+             	</ul>
+			</div>
+
+			<div class="col">
+				<h1 class="city" id="city" >Montreal <br /></h1>
 			</div>
 		</div>
 
@@ -44,83 +47,9 @@
 			<input type="text" placeholder="City Name" autocomplete="off" autofocus="on" id="searchBar"  />
 			<input type="submit" value="search" id="submitButton">
 		</form>
-
-		<div class="row">
-			<div class="col-2">
-				<div class="card">
-					<div class="card-header">
-							<h5>Tomorrow </h5>
-						</div>
-					<div class="card-body">
-			
-						<p class="card-text">
-							30% chance of rain <br />
-							<span class="emo">🌧</span>18°
-						</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-2">
-				<div class="card">
-						<div class="card-header">
-							<h5> Day After</h5>
-						</div>
-					<div class="card-body">
-					 
-						<p class="card-text">
-							20% chance of rain <br />
-							<span class="emo">🌧</span>19°
-						</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-2">
-				<div class="card">
-
-							<div class="card-header">
-							<h5> Day After</h5>
-						</div>
-					<div class="card-body">
-					 
-						<p class="card-text">
-							20% chance of rain <br />
-							<span class="emo">⛅</span>21°
-						</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-2">
-				<div class="card">
-						<div class="card-header">
-							<h5 >Day After</h5>
-						</div>
-						<div class="card-body">
-							<p class="card-text">
-								Use sunscreen! <br />
-								<span class="emo">☀</span>25°
-							</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-2">
-					<div class="card">
-						<div class="card-header">
-							<h5 >Day After</h5>
-						</div>
-						<div class="card-body">
-							<p class="card-text">
-								Use sunscreen! <br />
-								<span class="emo">☀</span>27°
-							</p>
-						</div>
-					</div>
-				</div>
-		 
-	</div>
+<div class="row">
+<div id="forecast">forecast </div>
+</div>
 </div>
 <a href="https://github.com/Leme-jpeg/weather-app.git" id="link"> Coded by S. Desjardins </a>
 
