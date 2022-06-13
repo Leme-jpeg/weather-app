@@ -1,16 +1,16 @@
 body {
   font-family: "Playfair Display", serif;
+  font-weight: bold;
 }
 
 .container {
+  margin: 42px;
   border: 2px solid #dadde1;
-  margin: 20px;
   border-radius: 10px;
   padding: 20px;
 }
 .city {
   text-align: right;
-
   font-weight: bold;
   font-size: 80px;
   padding: 70 0 0 0px;
@@ -24,13 +24,12 @@ h3 {
 #icon {
   position: relative;
   left: 30px;
-  font-size: 80px;
+  font-size: 100px;
   -webkit-filter: drop-shadow(5px 5px 5px #222);
   filter: drop-shadow(5px 5px 5px #222);
 }
 li {
   list-style: none;
-  font-weight: bold;
 }
 .tempNow {
   text-align: center;
@@ -46,15 +45,22 @@ li {
 }
 .searchbar {
   text-align: center;
-  padding: 10px 0 40px 0;
+  padding: 10px 0 80px 0;
 }
 
-.card {
+#allTheForecast {
   text-align: center;
+  display: block;
+}
+.card {
+  display: flex;
+  justify-content: space-around;
 }
 .emo {
   font-size: 100px;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
 }
 #link {
-  margin: 0 auto;
+  padding: 10px 0 0 20px;
 }
