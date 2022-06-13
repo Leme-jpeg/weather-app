@@ -50,16 +50,13 @@ li {
   padding: 10px 0 80px 0;
 }
 
-#allTheForecast {
-  text-align: center;
-  display: block;
-}
 .box {
   display: flex;
   justify-content: space-evenly;
   align-items: stretch;
 }
 .card {
+  text-align: center;
   margin: auto;
   opacity: 80%;
 }

@@ -84,7 +84,7 @@ function displayForecast(response) {
 						<p class="card-text">
 							<div forecastTemp>min ${Math.round(
                 forecastDay.temp.min
-              )}°C </br> max${Math.round(forecastDay.temp.max)}°C </div>
+              )}°C </br> max ${Math.round(forecastDay.temp.max)}°C </div>
 
          <img src="http://openweathermap.org/img/wn/${
            forecastDay.weather[0].icon
