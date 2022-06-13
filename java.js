@@ -48,7 +48,15 @@ form.addEventListener("submit", search);
 function formatDay(timestamp) {
   let date = new Date(timestamp * 1000);
   let day = date.getDay();
-  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
 
   return days[day];
 }
@@ -59,16 +67,16 @@ function displayForecast(response) {
 
   let forecastElement = document.querySelector("#forecast");
 
-  let forecastHTML = `<div class="row"  class="d-flex align-items-stretch">`;
+  let forecastHTML = `<div class="row" class="box">`;
   forecast.forEach(function (forecastDay, index) {
-    if (index < 6) {
+    if (index < 7) {
       forecastHTML =
         forecastHTML +
         `
-			<div >
+			
 				<div class="card" >
 
-						<div class="card-header">
+						<div class="card-header" >
 						<h5 class="forecastDay">${formatDay(forecastDay.dt)}</h5>
 						</div>
 					<div class="card-bod">
@@ -85,9 +93,8 @@ function displayForecast(response) {
 							
 							<div class="description">${forecastDay.weather[0].description}</div>
 						</p>
-					</div>
-				</div>
-			</div>`;
+            </div>
+				</div>`;
     }
   });
 
