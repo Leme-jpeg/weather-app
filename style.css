@@ -14,30 +14,32 @@ body {
 .city {
   text-align: right;
   font-weight: bold;
-  font-size: 80px;
+  font-size: 70px;
   padding: 70 0 0 0px;
 }
 h3 {
   font-weight: bold;
-  font-size: 25px;
+  font-size: 35px;
   left: 16px;
   padding: 0 0 0 10px;
 }
 #icon {
   position: relative;
-  left: 30px;
+  left: 50px;
   font-size: 100px;
   -webkit-filter: drop-shadow(5px 5px 5px #222);
   filter: drop-shadow(5px 5px 5px #222);
 }
 li {
+  position: relative;
+  font-size: 25px;
   list-style: none;
 }
 .tempNow {
   text-align: center;
 }
 .currently {
-  font-size: 35px;
+  font-size: 50px;
 }
 
 #units {
@@ -52,16 +54,18 @@ li {
 
 .box {
   display: flex;
-  justify-content: space-evenly;
   align-items: stretch;
+  justify-content: space-around;
 }
 .card {
   text-align: center;
   margin: auto;
   opacity: 80%;
+  width: 140px;
+  max-height: 270px;
 }
 .emo {
-  font-size: 100px;
+  font-size: 10px;
   -webkit-filter: drop-shadow(5px 5px 5px #222);
   filter: drop-shadow(5px 5px 5px #222);
 }
